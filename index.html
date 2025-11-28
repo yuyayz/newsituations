@@ -95,7 +95,11 @@ function loadRandomQuestion() {
   document.getElementById("question").innerHTML = selected.question_lines.join("<br>");
 
   // 回答を改行付きで表示（日本語を例に）
-  document.getElementById("answer").innerHTML = selected.response_ja_lines.join("<br>");
+document.getElementById("answer").innerHTML =
+  selected.response_en_lines.join("<br>") +
+  "<br><br>" +
+  selected.key_points_lines.join("<br>");
+
 
   document.getElementById("answer").style.display = "none";
 }
@@ -118,6 +122,7 @@ function loadRandomQuestion() {
 </script>
 </body>
 </html>
+
 
 
 
