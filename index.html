@@ -3,24 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>通訳案内士シチュエーション練習</title>
+  <!-- スマホ中央寄せと縮尺を安定させるためのviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
+    /* ベース整備：余白とボックスモデルを安定化 */
+    html, body {
+      height: 100%;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: "Arial", sans-serif;
-      margin: 40px;
+      margin: 0;                 /* ← 左寄り感の原因を減らすため、bodyの外側余白を0 */
       background: #f9f9f9;
-      font-size: 18px; 
+      font-size: 18px;
+      color: #111;
     }
+
+    /* 画面中央寄せ用のラッパー（縦方向は自然なスクロール、横は中央） */
+    .page {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;   /* ← 横方向中央寄せ */
+      align-items: flex-start;   /* 上寄せ（必要なら center に変更可） */
+      padding: 40px 20px;        /* 画面内側の余白（左右は小さめに） */
+    }
+
+    /* カード本体：中央寄せの決め手は margin: 0 auto と最大幅＋100%幅 */
     .card {
       background: #fff;
       border: 1px solid #ddd;
       padding: 20px;
       border-radius: 8px;
-      max-width: 700px;
+      width: 100%;               /* ← 親幅に追従 */
+      max-width: 700px;          /* ← PCで広がりすぎない */
+      margin: 0 auto;            /* ← 横中央寄せの要 */
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     h2 {
       margin-top: 0;
+      line-height: 1.4;
     }
+
     button {
       margin-top: 20px;
       margin-right: 10px;
@@ -30,106 +58,103 @@
       color: #fff;
       border-radius: 5px;
       cursor: pointer;
-      font-size: 25px;  
+      font-size: 18px;           /* ← 25pxだとモバイルで大きすぎることがあるため微調整 */
     }
     button:hover {
       background: #005a9e;
     }
+
     .answer {
       margin-top: 20px;
       padding: 15px;
       background: #eef;
       border-radius: 5px;
       display: none;
-      font-size: 30px;
+      font-size: 20px;           /* ← ベースの読みやすさを担保 */
+      line-height: 1.6;
     }
-@media screen and (max-width: 600px) {
-  body {
-    margin: 15px;
-    font-size: 20px;
-  }
 
-  .card {
-    max-width: 100%;
-    padding: 12px;
-  }
+    /* モバイル最適化 */
+    @media screen and (max-width: 600px) {
+      .page {
+        padding: 20px 12px;      /* ← スマホでは左右の余白をさらに詰める */
+      }
 
-  h2 {
-    font-size: 22px;
-  }
+      .card {
+        padding: 16px;
+        max-width: 100%;         /* ← 画面幅いっぱいに */
+        margin: 0 auto;          /* ← 念のため（上書き） */
+      }
 
-  .answer {
-    font-size: 6vw;   /* 画面幅に応じて文字サイズを可変 */
-    line-height: 1.6; /* 行間を広げて読みやすく */
-  }
+      h2 {
+        font-size: 22px;
+      }
 
-  button {
-    font-size: 4vw;   /* ボタンも相対サイズに */
-    padding: 8px 12px;
-  }
-}
+      .answer {
+        font-size: 5.5vw;        /* ← 画面幅連動で文字を大きく/小さく */
+        line-height: 1.7;
+      }
 
+      button {
+        font-size: 4.2vw;        /* ← モバイルの指操作に最適化 */
+        padding: 10px 14px;
+        margin-right: 8px;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h2 id="question">問題を読み込み中...</h2>
-    <button id="showAnswer">模範解答を見る</button>
-    <button id="nextQuestion">次の問題</button>
-    <div id="answer" class="answer"></div>
+  <!-- 中央寄せ用ラッパー -->
+  <div class="page">
+    <div class="card">
+      <h2 id="question">問題を読み込み中...</h2>
+      <button id="showAnswer">模範解答を見る</button>
+      <button id="nextQuestion">次の問題</button>
+      <div id="answer" class="answer"></div>
+    </div>
   </div>
 
- <script>
-  let questions = [];
+  <script>
+    let questions = [];
 
-function loadRandomQuestion() {
-  if (questions.length === 0) {
-    document.getElementById("question").textContent = "問題がありません。";
-    document.getElementById("answer").textContent = "";
-    return;
-  }
-  const randomIndex = Math.floor(Math.random() * questions.length);
-  const selected = questions.splice(randomIndex, 1)[0]; // ★ 出題済みを削除
+    function loadRandomQuestion() {
+      if (questions.length === 0) {
+        document.getElementById("question").textContent = "問題がありません。";
+        document.getElementById("answer").textContent = "";
+        return;
+      }
+      const randomIndex = Math.floor(Math.random() * questions.length);
+      const selected = questions.splice(randomIndex, 1)[0]; // ★ 出題済みを削除
 
-  // 質問文を改行付きで表示
-  document.getElementById("question").innerHTML = selected.question_lines.join("<br>");
+      // 質問文を改行付きで表示
+      document.getElementById("question").innerHTML = selected.question_lines.join("<br>");
 
-  // 回答を改行付きで表示（日本語を例に）
-document.getElementById("answer").innerHTML =
-  selected.response_en_lines.join("<br>") +
-  "<br><br>" +
-  selected.key_points_lines.join("<br>");
+      // 回答（英語）＋ Key Points を改行付きで表示
+      document.getElementById("answer").innerHTML =
+        selected.response_en_lines.join("<br>") +
+        "<br><br>" +
+        selected.key_points_lines.join("<br>");
 
+      document.getElementById("answer").style.display = "none";
+    }
 
-  document.getElementById("answer").style.display = "none";
-}
-
-
-  fetch("questions.json")
-    .then(response => response.json())
-    .then(data => {
-      questions = data;
-      loadRandomQuestion();
-
-      document.getElementById("showAnswer").addEventListener("click", () => {
-        document.getElementById("answer").style.display = "block";
-      });
-
-      document.getElementById("nextQuestion").addEventListener("click", () => {
+    fetch("questions.json")
+      .then(response => response.json())
+      .then(data => {
+        questions = data;
         loadRandomQuestion();
+
+        document.getElementById("showAnswer").addEventListener("click", () => {
+          document.getElementById("answer").style.display = "block";
+          // 見やすさ向上のためスクロール
+          document.getElementById("answer").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+
+        document.getElementById("nextQuestion").addEventListener("click", () => {
+          loadRandomQuestion();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
       });
-    });
-</script>
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
