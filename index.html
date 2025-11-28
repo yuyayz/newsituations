@@ -79,48 +79,40 @@
     <div id="answer" class="answer"></div>
   </div>
 
-  <script>
-    let questions = [];
+ <script>
+  let questions = [];
 
-    function loadRandomQuestion() {
-      if (questions.length === 0) {
-        document.getElementById("question").textContent = "問題がありません。";
-        document.getElementById("answer").textContent = "";
-        return;
-      }
-      const randomIndex = Math.floor(Math.random() * questions.length);
-      const selected = questions[randomIndex];
-      document.getElementById("question").textContent = selected.question;
-      document.getElementById("answer").textContent = selected.response; // ← JSONのキーに合わせて修正
-      document.getElementById("answer").style.display = "none";
+  function loadRandomQuestion() {
+    if (questions.length === 0) {
+      document.getElementById("question").textContent = "問題がありません。";
+      document.getElementById("answer").textContent = "";
+      return;
     }
+    const randomIndex = Math.floor(Math.random() * questions.length);
+    const selected = questions.splice(randomIndex, 1)[0]; // ★ 出題済みを削除
+    document.getElementById("question").textContent = selected.question;
+    document.getElementById("answer").textContent = selected.response;
+    document.getElementById("answer").style.display = "none";
+  }
 
-    fetch("questions.json") // ← GitHub上のファイル名に合わせて修正
-      .then(response => {
-        if (!response.ok) {
-          throw new Error("HTTP error " + response.status);
-        }
-        return response.json();
-      })
-      .then(data => {
-        questions = data;
-        loadRandomQuestion();
+  fetch("questions.json")
+    .then(response => response.json())
+    .then(data => {
+      questions = data;
+      loadRandomQuestion();
 
-        document.getElementById("showAnswer").addEventListener("click", () => {
-          document.getElementById("answer").style.display = "block";
-        });
-
-        document.getElementById("nextQuestion").addEventListener("click", () => {
-          loadRandomQuestion();
-        });
-      })
-      .catch(error => {
-        document.getElementById("question").textContent = "問題の読み込みに失敗しました。";
-        console.error("読み込みエラー:", error);
+      document.getElementById("showAnswer").addEventListener("click", () => {
+        document.getElementById("answer").style.display = "block";
       });
-  </script>
+
+      document.getElementById("nextQuestion").addEventListener("click", () => {
+        loadRandomQuestion();
+      });
+    });
+</script>
 </body>
 </html>
+
 
 
 
