@@ -226,5 +226,254 @@
       "② 「思いやり文化」を説明に含める",
       "③ “show care for the community” で温かく締める"
     ]
-  }
+  },
+{
+  "id": 11,
+  "question_lines": [
+    "【シチュエーション】",
+    "お客様の車椅子が故障してしまいました。修理する必要がありますが、イギリス製の車椅子なので、日本国内での修理は難しそうです。お客様は車椅子なしでは外出できません。あなたは通訳ガイドとしてどのように対応しますか。",
+    "",
+    "【条件】個人旅行なので、スケジュールは柔軟に変更できます。"
+  ],
+  "response_en_lines": [
+    "I’m so sorry your wheelchair broke down.",
+    "Since it’s made in the UK, repair may take time, but let’s first contact the manufacturer or local distributor for advice.",
+    "Meanwhile, I’ll arrange a rental wheelchair so you can continue sightseeing comfortably."
+  ],
+  "response_ja_lines": [
+    "車椅子が壊れてしまったとのことで大変申し訳ありません。",
+    "英国製とのことなので修理には時間がかかるかもしれませんが、まずメーカーまたは代理店に相談してみましょう。",
+    "その間、観光を続けられるようレンタルの車椅子を手配いたします。"
+  ],
+  "key_points_lines": [
+    "🔑 Key Points",
+    "① 共感の表現 “I’m so sorry…” で安心感を与える",
+    "② 修理＋代替手段（レンタル）の両面対応",
+    "③ 「今できること」をすぐ提示して前向きな印象に"
+  ]
+},
+{
+  "id": 12,
+  "question_lines": [
+    "【シチュエーション】",
+    "あなたがお客様と一緒に新幹線にて移動中、地震発生のため車両が一時停止し、日本語のアナウンスが流れました。運転再開の目途は立っていません。お客様は不安な様子です。",
+    "",
+    "【条件】お客様は個人旅行で、その後の予定に特に制限はありません。"
+  ],
+  "response_en_lines": [
+    "The train has stopped because a minor earthquake was detected.",
+    "Please don’t worry—it’s a standard safety procedure.",
+    "The staff are checking the tracks now, and we’ll move again once it’s confirmed safe.",
+    "I’ll keep you updated in English."
+  ],
+  "response_ja_lines": [
+    "地震を検知したため列車が停車しましたが、ご安心ください。これは安全確認のための通常の手順です。",
+    "現在線路を点検中で、安全が確認され次第再開します。",
+    "英語でも随時お伝えしますね。"
+  ],
+  "key_points_lines": [
+    "🔑 Key Points",
+    "① “Please don’t worry—it’s a safety procedure.” で安心感を与える",
+    "② 状況・理由・今後の見通しをセットで説明",
+    "③ “I’ll keep you updated” で信頼を確保"
+  ]
+},
+{
+  "id": 13,
+  "question_lines": [
+    "【シチュエーション】",
+    "友人同士二人連れのお客様が、日本の小学校で児童が清掃を行うところをぜひ見学したいと希望しています。",
+    "",
+    "【条件】一人はアメリカの小学校で教員をしています。お客様は1週間ほど滞在予定で日程は自由です。"
+  ],
+  "response_en_lines": [
+    "That’s a great cultural interest!",
+    "Since schools require advance approval, I’ll contact the local board of education or a cultural center to see if we can arrange a visit.",
+    "Alternatively, we may observe a similar activity at a community center."
+  ],
+  "response_ja_lines": [
+    "素晴らしい関心ですね！学校見学は事前許可が必要なので、教育委員会や地域の文化施設に問い合わせ、見学や類似体験が可能か確認します。"
+  ],
+  "key_points_lines": [
+    "🔑 Key Points",
+    "① “That’s a great cultural interest!” で肯定的に始める",
+    "② 許可が必要であることを丁寧に説明",
+    "③ 代替案（文化センター等）を提案"
+  ]
+},
+{
+  "id": 14,
+  "question_lines": [
+    "【シチュエーション】",
+    "お客様が、有料でもいいので、日本の一般家庭で一汁三菜の料理を食べてみたいと希望しています。",
+    "",
+    "【条件】定年退職後の夫婦で個人旅行、滞在10日間のうち現地2泊を担当。"
+  ],
+  "response_en_lines": [
+    "That’s a wonderful request!",
+    "While it’s difficult to dine in a private home, I can arrange a home-style cooking experience or a cultural exchange meal with locals.",
+    "It’s a great way to enjoy real Japanese flavors."
+  ],
+  "response_ja_lines": [
+    "素敵なご希望ですね。一般家庭での食事は難しいですが、家庭料理体験や地元の方との交流食事会を手配できます。",
+    "日本の味を体験する良い機会です。"
+  ],
+  "key_points_lines": [
+    "🔑 Key Points",
+    "① 「できない理由」を伝えつつ代替案を用意",
+    "② “That’s a wonderful request!” で共感を表現",
+    "③ 「文化体験」として価値を高める"
+  ]
+},
+{
+  "id": 15,
+  "question_lines": [
+    "【シチュエーション】",
+    "お客様が商店街の小さなハンコ屋で印鑑を作りたいと希望されています。しかし作成に4〜5日かかり、明日のフライトで帰国予定です。",
+    "",
+    "【条件】お店は海外発送不可。お客様は個人旅行。"
+  ],
+  "response_en_lines": [
+    "It usually takes about five days to make a personalized stamp, so it won’t be finished before your flight.",
+    "However, you can buy a ready-made one with your name in kanji, or order online for overseas delivery later."
+  ],
+  "response_ja_lines": [
+    "名入れの印鑑作成には約5日かかるためご出発までに間に合いません。",
+    "漢字の既製印やオンライン注文での海外発送も可能です。"
+  ],
+  "key_points_lines": [
+    "🔑 Key Points",
+    "① “It usually takes…” で落ち着いた説明",
+    "② 代替案を2種類（即時・後日）提示",
+    "③ 「あきらめさせる」でなく「選ばせる」"
+  ]
+},
+  {
+  "id": 16,
+  "question_lines": [
+    "【シチュエーション】",
+    "お客様は大阪から姫路へ行き姫路城を観光する予定でしたが、台風の影響で午前中の新幹線が運休になりました。",
+    "",
+    "【条件】4人家族、個人旅行。"
+  ],
+  "response_en_lines": [
+    "Due to the typhoon, the morning trains are suspended.",
+    "Let’s wait for the next update, and meanwhile I can suggest indoor activities nearby, such as Osaka Castle Museum or a food market, until travel resumes safely.",
+    "Safety first—we’ll aim for Himeji in the afternoon if conditions improve."
+  ],
+  "response_ja_lines": [
+    "台風の影響で午前中の新幹線は運休しています。",
+    "再開までの間、安全に過ごせるよう大阪城ミュージアムや市場などの屋内観光をご提案します。",
+    "安全第一で、天候が回復すれば午後に姫路へ向かいましょう。"
+  ],
+  "key_points_lines": [
+    "🔑 Key Points",
+    "① 安全第一を明確化",
+    "② “Meanwhile…” で時間の有効活用を提案",
+    "③ 天候回復後の見通しを提示"
+  ]
+},
+{
+  "id": 17,
+  "question_lines": [
+    "【シチュエーション】",
+    "お客様が神社やショッピング施設で手を洗った後、ペーパータオルやハンドドライヤーがなくて困っています。",
+    "",
+    "【条件】10〜20代のグループ旅行。"
+  ],
+  "response_en_lines": [
+    "In Japan, some places don’t provide paper towels or dryers to save energy.",
+    "Many people carry small towels or handkerchiefs.",
+    "You can find them easily at convenience stores—shall we grab one now?"
+  ],
+  "response_ja_lines": [
+    "日本では、省エネのためペーパータオルやドライヤーを置かない場所もあります。",
+    "多くの人が小さなタオルやハンカチを持ち歩いています。",
+    "コンビニで簡単に購入できますので、今すぐ用意しましょう。"
+  ],
+  "key_points_lines": [
+    "🔑 Key Points",
+    "① “to save energy” で背景を説明",
+    "② 代替（携帯タオル）＋購入案を提示",
+    "③ すぐ動ける具体的提案で不便解消"
+  ]
+},
+{
+  "id": 18,
+  "question_lines": [
+    "【シチュエーション】",
+    "お客様が地方で買い物をしようとしたところ、現金しか使えず困っています。",
+    "",
+    "【条件】若いカップルで個人旅行、滞在1週間。"
+  ],
+  "response_en_lines": [
+    "This store only accepts cash, which is still common in smaller towns.",
+    "There’s an ATM just a few minutes away—I’ll help you withdraw yen so you can shop smoothly.",
+    "If you prefer, we can also adjust the plan toward card-friendly shops afterward."
+  ],
+  "response_ja_lines": [
+    "このお店は現金のみの対応ですが、地方ではよくあることです。",
+    "数分先にATMがありますので、一緒に行って円を引き出しましょう。",
+    "ご希望であれば、この後はカードが使えるお店中心に回るよう調整します。"
+  ],
+  "key_points_lines": [
+    "🔑 Key Points",
+    "① 地方のキャッシュ文化を端的に説明",
+    "② すぐに解決策（ATM同行）を提示",
+    "③ 以降の計画調整でストレス軽減"
+  ]
+},
+{
+  "id": 19,
+  "question_lines": [
+    "【シチュエーション】",
+    "京都で神社仏閣をいくつか見たお客様が「もう神社仏閣は飽きた」と言っています。",
+    "",
+    "【条件】若いカップル、個人旅行。"
+  ],
+  "response_en_lines": [
+    "I understand—you’ve seen many temples today.",
+    "How about something refreshing, like a riverside walk in Arashiyama, the Kyoto Aquarium, or a traditional sweets café?",
+    "It’ll show another side of Kyoto and keep the day enjoyable."
+  ],
+  "response_ja_lines": [
+    "たくさん神社仏閣をご覧になったので、お気持ちわかります。",
+    "気分転換に、嵐山の川辺散歩や京都水族館、和菓子カフェはいかがでしょう？",
+    "京都の別の魅力を感じながら、楽しい一日にしましょう。"
+  ],
+  "key_points_lines": [
+    "🔑 Key Points",
+    "① 共感を示してから代案を提示",
+    "② “another side of Kyoto” で前向きに提案",
+    "③ 若者向けにアクティブ・カジュアルな選択肢"
+  ]
+},
+{
+  "id": 20,
+  "question_lines": [
+    "【シチュエーション】",
+    "お客様が酒蔵見学後、購入した日本酒を開けると違う銘柄が入っていました。",
+    "",
+    "【条件】60代男性、明日帰国予定。"
+  ],
+  "response_en_lines": [
+    "I’m sorry about the mix-up.",
+    "Let’s contact the brewery right away—they might be able to send the correct one to your hotel or even overseas.",
+    "I’ll explain the situation in Japanese and handle the details for you."
+  ],
+  "response_ja_lines": [
+    "ご購入の商品が違っていたようで申し訳ありません。",
+    "すぐに酒蔵に連絡して、正しい銘柄をホテルまたは海外へ送ってもらえるか確認します。",
+    "私が日本語で事情を説明し、手続きを代行します。"
+  ],
+  "key_points_lines": [
+    "🔑 Key Points",
+    "① “I’m sorry about the mix-up.” で誠実に謝意",
+    "② 迅速連絡＋配送提案で不都合を最短で解消",
+    "③ 通訳ガイドの代弁・手続き力を明示"
+  ]
+}
+
+
 ]
+
