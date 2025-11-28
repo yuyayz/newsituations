@@ -82,18 +82,24 @@
  <script>
   let questions = [];
 
-  function loadRandomQuestion() {
-    if (questions.length === 0) {
-      document.getElementById("question").textContent = "問題がありません。";
-      document.getElementById("answer").textContent = "";
-      return;
-    }
-    const randomIndex = Math.floor(Math.random() * questions.length);
-    const selected = questions.splice(randomIndex, 1)[0]; // ★ 出題済みを削除
-    document.getElementById("question").textContent = selected.question;
-    document.getElementById("answer").innerHTML = selected.response.replace(/\n/g, "<br>");
-    document.getElementById("answer").style.display = "none";
+function loadRandomQuestion() {
+  if (questions.length === 0) {
+    document.getElementById("question").textContent = "問題がありません。";
+    document.getElementById("answer").textContent = "";
+    return;
   }
+  const randomIndex = Math.floor(Math.random() * questions.length);
+  const selected = questions.splice(randomIndex, 1)[0]; // ★ 出題済みを削除
+
+  // 質問文を改行付きで表示
+  document.getElementById("question").innerHTML = selected.question_lines.join("<br>");
+
+  // 回答を改行付きで表示（日本語を例に）
+  document.getElementById("answer").innerHTML = selected.response_ja_lines.join("<br>");
+
+  document.getElementById("answer").style.display = "none";
+}
+
 
   fetch("questions.json")
     .then(response => response.json())
@@ -112,6 +118,7 @@
 </script>
 </body>
 </html>
+
 
 
 
