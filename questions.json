@@ -1,53 +1,55 @@
 [
- {
+{
   "id": 1,
   "question": "お客様を新幹線の車内に案内したところ、外国人客が指定席を間違えて座り、日本人の乗客と口論になりました。\n\n【条件】列車は満席で、まもなく発車します。両者を落ち着かせ、円満に解決するように対応してください。",
-  "response": "I’m sorry for the confusion. It seems there’s been a seat mix-up. May I see your ticket, please? Thank you. Your correct seat is two rows ahead—let me help you find it。\n\n混乱してしまって申し訳ありません。座席が入れ違っていたようです。チケットを拝見できますか？ありがとうございます。正しいお席は2列前ですので、ご案内いたしますね。\n\n🔑 Key Points\n\n① 非難ではなく “It seems…” で柔らかく始める\n\n② 事実→確認→解決→安心の順に整理\n\n③ “let me help you” で信頼と安心感を与える"
+  "response": "I’m sorry for the confusion. It seems there’s been a seat mix-up. May I see your ticket, please? Thank you. Your correct seat is two rows ahead—let me help you find it。\n\n\n混乱してしまって申し訳ありません。座席が入れ違っていたようです。チケットを拝見できますか？ありがとうございます。正しいお席は2列前ですので、ご案内いたしますね。\n\n\n🔑 Key Points\n\n① 非難ではなく “It seems…” で柔らかく始める\n\n② 事実→確認→解決→安心の順に整理\n\n③ “let me help you” で信頼と安心感を与える"
 },
 {
   "id": 2,
   "question": "嵐山の散策ツアー中に突然強い雨が降り出しました。お客様は散策を楽しみにしていました。\n\n【条件】ツアー終了まで2時間。安全確保を優先しつつ、代替プランを提示して満足度を保ってください。",
-  "response": "I’m afraid the rain is getting heavier, so it’s difficult to walk around Arashiyama now. Instead, would you like to visit the bamboo forest by rickshaw or enjoy a tea experience indoors nearby。\n\n雨が強くなってきたため、嵐山の散策は難しいです。代わりに人力車で竹林を回るか、近くの屋内でお茶体験を楽しむのはいかがでしょうか？\n\n🔑 Key Points\n\n① “I’m afraid…” で丁寧に状況を伝える\n\n② 「中止」ではなく「代替案」を即提案\n\n③ “would you like to” で相手に選択肢を与える"
+  "response": "I’m afraid the rain is getting heavier, so it’s difficult to walk around Arashiyama now. Instead, would you like to visit the bamboo forest by rickshaw or enjoy a tea experience indoors nearby。\n\n\n雨が強くなってきたため、嵐山の散策は難しいです。代わりに人力車で竹林を回るか、近くの屋内でお茶体験を楽しむのはいかがでしょうか？\n\n\n🔑 Key Points\n\n① “I’m afraid…” で丁寧に状況を伝える\n\n② 「中止」ではなく「代替案」を即提案\n\n③ “would you like to” で相手に選択肢を与える"
 },
 {
   "id": 3,
   "question": "神社を参拝中に、お客様が「なぜ拍手をするのですか？」と質問しました。\n\n【条件】宗教的説明を避け、文化的・礼儀的背景を中心に、シンプルかつ印象的に説明してください。",
-  "response": "We clap twice to show respect and to call the attention of the deity. It’s not prayer in a Western sense, but a way to express gratitude and purify our hearts before making a wish。\n\n二礼二拍手は、神様への敬意と感謝を示し、心を清めて願いを伝える日本独自の礼法です。西洋の祈りとは少し異なります。\n\n🔑 Key Points\n\n① 宗教ではなく文化行為として説明\n\n② “in a Western sense” で異文化比較を加える\n\n③ gratitude・purify などポジティブな語で締める"
+  "response": "We clap twice to show respect and to call the attention of the deity. It’s not prayer in a Western sense, but a way to express gratitude and purify our hearts before making a wish。\n\n\n二礼二拍手は、神様への敬意と感謝を示し、心を清めて願いを伝える日本独自の礼法です。西洋の祈りとは少し異なります。\n\n\n🔑 Key Points\n\n① 宗教ではなく文化行為として説明\n\n② “in a Western sense” で異文化比較を加える\n\n③ gratitude・purify などポジティブな語で締める"
 },
 {
   "id": 4,
   "question": "ホテルに到着したところ、お客様のスーツケースが届いていませんでした。\n\n【条件】お客様は焦っており、今夜の衣服も中に入っています。配送会社と連絡を取りながら安心できる説明をしてください。",
-  "response": "I’m very sorry your luggage hasn’t arrived yet. I’ve already contacted the delivery company, and it should reach the hotel by this evening. Please don’t worry—I’ll keep you updated and help with anything you need。\n\nお荷物がまだ届いておらず申し訳ありません。配送業者に確認済みで、本日中にはホテルに届く予定です。ご安心ください。進捗があり次第お知らせします。\n\n🔑 Key Points\n\n① 状況→対応→安心の3ステップ\n\n② “Please don’t worry.” は効果的な安心表現\n\n③ 積極的フォロー “I’ll keep you updated.” を添える"
+  "response": "I’m very sorry your luggage hasn’t arrived yet. I’ve already contacted the delivery company, and it should reach the hotel by this evening. Please don’t worry—I’ll keep you updated and help with anything you need。\n\n\nお荷物がまだ届いておらず申し訳ありません。配送業者に確認済みで、本日中にはホテルに届く予定です。ご安心ください。進捗があり次第お知らせします。\n\n\n🔑 Key Points\n\n① 状況→対応→安心の3ステップ\n\n② “Please don’t worry.” は効果的な安心表現\n\n③ 積極的フォロー “I’ll keep you updated.” を添える"
 },
 {
   "id": 5,
   "question": "外国人客が「切腹」と「武士道」の関係について質問しました。\n\n【条件】残酷な印象を避け、名誉と責任という価値観を中心に簡潔に説明してください。",
-  "response": "Seppuku was a ritual suicide practiced by samurai to take responsibility and preserve honor. It may sound shocking today, but in their culture, dying with integrity was considered more honorable than living with shame。\n\n切腹とは、武士が責任を取り名誉を守るために行った儀式的な自決です。現代では衝撃的に聞こえるかもしれませんが、当時は誠実を重んじる文化でした。\n\n🔑 Key Points\n\n① “It may sound shocking, but…” で文化差を和らげる\n\n② 名誉と責任を中心に\n\n③ 道徳的評価を避ける中立表現"
+  "response": "Seppuku was a ritual suicide practiced by samurai to take responsibility and preserve honor. It may sound shocking today, but in their culture, dying with integrity was considered more honorable than living with shame。\n\n\n切腹とは、武士が責任を取り名誉を守るために行った儀式的な自決です。現代では衝撃的に聞こえるかもしれませんが、当時は誠実を重んじる文化でした。\n\n\n🔑 Key Points\n\n① “It may sound shocking, but…” で文化差を和らげる\n\n② 名誉と責任を中心に\n\n③ 道徳的評価を避ける中立表現"
 },
 {
   "id": 6,
   "question": "温泉施設で外国人客がタオルを湯船に入れようとしています。\n\n【条件】他の客もいるため注意が聞こえる環境です。文化を尊重しつつ、マナーを丁寧に伝えてください。",
-  "response": "Excuse me, could you please keep the towel out of the bathtub? In Japan, we try to keep the bathwater clean for everyone. You can place it on your head or the side of the bath instead。\n\nすみません、タオルは湯船の外に出していただけますか？日本ではお湯を清潔に保つためのマナーです。頭や浴槽のふちに置くのが一般的です。\n\n🔑 Key Points\n\n① 命令ではなく “could you please” で柔らかく\n\n② 理由（清潔保持）を必ず添える\n\n③ “instead” で代替方法を提示"
+  "response": "Excuse me, could you please keep the towel out of the bathtub? In Japan, we try to keep the bathwater clean for everyone. You can place it on your head or the side of the bath instead。\n\n\nすみません、タオルは湯船の外に出していただけますか？日本ではお湯を清潔に保つためのマナーです。頭や浴槽のふちに置くのが一般的です。\n\n\n🔑 Key Points\n\n① 命令ではなく “could you please” で柔らかく\n\n② 理由（清潔保持）を必ず添える\n\n③ “instead” で代替方法を提示"
 },
 {
   "id": 7,
   "question": "観光中にお客様が「日本人はなぜ靴を脱ぐのですか？」と質問しました。\n\n【条件】宗教的理由ではなく、生活習慣・清潔観・敬意の3点を簡潔に説明してください。",
-  "response": "We take off our shoes to keep the floor clean, especially because we sit and sleep on tatami. It’s also a sign of respect when entering someone’s home or a sacred place。\n\n靴を脱ぐのは床を清潔に保つためで、畳で座ったり寝たりする文化があります。また、他人の家や神聖な場所では敬意を表す意味もあります。\n\n🔑 Key Points\n\n① 清潔＋敬意の2軸で整理\n\n② “especially because…” で理由を自然に追加\n\n③ 具体例（tatami, sacred place）を入れて理解を深める"
+  "response": "We take off our shoes to keep the floor clean, especially because we sit and sleep on tatami. It’s also a sign of respect when entering someone’s home or a sacred place。\n\n\n靴を脱ぐのは床を清潔に保つためで、畳で座ったり寝たりする文化があります。また、他人の家や神聖な場所では敬意を表す意味もあります。\n\n\n🔑 Key Points\n\n① 清潔＋敬意の2軸で整理\n\n② “especially because…” で理由を自然に追加\n\n③ 具体例（tatami, sacred place）を入れて理解を深める"
 },
 {
   "id": 8,
   "question": "寺院見学中、お客様が堂内で大声で話しています。\n\n【条件】他の参拝客もおり、静けさを保ちたい場面です。相手を恥をかかせずに注意してください。",
-  "response": "Excuse me, could we please speak a little more quietly? Temples are places for prayer and reflection, so keeping a calm atmosphere is appreciated. Thank you for your understanding。\n\nすみません、もう少しお静かにしていただけますか？お寺は祈りと静寂の場ですので、落ち着いた雰囲気を保つことが大切です。ご理解ありがとうございます。\n\n🔑 Key Points\n\n① “could we” で協調的な表現にする\n\n② “places for prayer and reflection” は定番表現\n\n③ 感謝で締めて穏やかに終える"
+  "response": "Excuse me, could we please speak a little more quietly? Temples are places for prayer and reflection, so keeping a calm atmosphere is appreciated. Thank you for your understanding。\n\n\nすみません、もう少しお静かにしていただけますか？お寺は祈りと静寂の場ですので、落ち着いた雰囲気を保つことが大切です。ご理解ありがとうございます。\n\n\n🔑 Key Points\n\n① “could we” で協調的な表現にする\n\n② “places for prayer and reflection” は定番表現\n\n③ 感謝で締めて穏やかに終える"
 },
 {
   "id": 9,
   "question": "団体ツアーの一人が集合時間に遅れています。\n\n【条件】他の参加者が不満を持ち始めています。状況を説明し、落ち着かせてください。",
-  "response": "One of our members is running a little late, but I’ve contacted them and they’re on their way. Thank you for waiting—we’ll depart as soon as they arrive。\n\nお一人が少し遅れていますが、連絡が取れており、こちらに向かっています。お待たせして申し訳ありません。到着次第すぐ出発いたします。\n\n🔑 Key Points\n\n① “running a little late” で柔らかい表現\n\n② 状況＋対応＋感謝の3要素をセットで\n\n③ 不満を抑える穏やかな口調"
+  "response": "One of our members is running a little late, but I’ve contacted them and they’re on their way. Thank you for waiting—we’ll depart as soon as they arrive。\n\n\nお一人が少し遅れていますが、連絡が取れており、こちらに向かっています。お待たせして申し訳ありません。到着次第すぐ出発いたします。\n\n\n🔑 Key Points\n\n① “running a little late” で柔らかい表現\n\n② 状況＋対応＋感謝の3要素をセットで\n\n③ 不満を抑える穏やかな口調"
 },
 {
   "id": 10,
   "question": "観光中にお客様が「日本人はなぜマスクをよくするの？」と尋ねました。\n\n【条件】健康面だけでなく、文化的背景（他人への配慮）を加えて説明してください。",
-  "response": "People in Japan wear masks not only for health reasons, but also to be considerate of others. It’s a way to prevent spreading illness and to show care for the community。\n\n日本人がマスクをするのは、健康だけでなく他人への配慮のためでもあります。病気をうつさないようにし、周囲への思いやりを示す文化的習慣です。\n\n🔑 Key Points\n\n① “not only…but also” で対比を明確に\n\n② 「思いやり文化」を説明に含める\n\n③ “show care for the community” で温かく締める"
+  "response": "People in Japan wear masks not only for health reasons, but also to be considerate of others. It’s a way to prevent spreading illness and to show care for the community。\n\n\n日本人がマスクをするのは、健康だけでなく他人への配慮のためでもあります。病気をうつさないようにし、周囲への思いやりを示す文化的習慣です。\n\n\n🔑 Key Points\n\n① “not only…but also” で対比を明確に\n\n② 「思いやり文化」を説明に含める\n\n③ “show care for the community” で温かく締める"
 }
+
 ]
+
 
