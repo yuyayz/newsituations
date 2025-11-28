@@ -91,7 +91,7 @@
     const randomIndex = Math.floor(Math.random() * questions.length);
     const selected = questions.splice(randomIndex, 1)[0]; // ★ 出題済みを削除
     document.getElementById("question").textContent = selected.question;
-    document.getElementById("answer").textContent = selected.response;
+    document.getElementById("answer").innerHTML = selected.response.replace(/\n/g, "<br>");
     document.getElementById("answer").style.display = "none";
   }
 
@@ -112,6 +112,7 @@
 </script>
 </body>
 </html>
+
 
 
 
