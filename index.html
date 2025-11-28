@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>通訳案内士シチュエーション練習</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 40px;
+      background: #f9f9f9;
+      font-size: 18px; 
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 700px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    button {
+      margin-top: 20px;
+      margin-right: 10px;
+      padding: 12px 20px;
+      border: none;
+      background: #0078d7;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 25px;  
+    }
+    button:hover {
+      background: #005a9e;
+    }
+    .answer {
+      margin-top: 20px;
+      padding: 15px;
+      background: #eef;
+      border-radius: 5px;
+      display: none;
+      font-size: 30px;
+    }
+@media screen and (max-width: 600px) {
+  body {
+    margin: 15px;
+    font-size: 20px;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .answer {
+    font-size: 6vw;   /* 画面幅に応じて文字サイズを可変 */
+    line-height: 1.6; /* 行間を広げて読みやすく */
+  }
+
+  button {
+    font-size: 4vw;   /* ボタンも相対サイズに */
+    padding: 8px 12px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2 id="question">問題を読み込み中...</h2>
+    <button id="showAnswer">模範解答を見る</button>
+    <button id="nextQuestion">次の問題</button>
+    <div id="answer" class="answer"></div>
+  </div>
+
+  <script>
+    let questions = [];
+
+    function loadRandomQuestion() {
+      if (questions.length === 0) {
+        document.getElementById("question").textContent = "問題がありません。";
+        document.getElementById("answer").textContent = "";
+        return;
+      }
+      const randomIndex = Math.floor(Math.random() * questions.length);
+      const selected = questions[randomIndex];
+      document.getElementById("question").textContent = selected.question;
+      document.getElementById("answer").textContent = selected.response; // ← JSONのキーに合わせて修正
+      document.getElementById("answer").style.display = "none";
+    }
+
+    fetch("questions.json") // ← GitHub上のファイル名に合わせて修正
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("HTTP error " + response.status);
+        }
+        return response.json();
+      })
+      .then(data => {
+        questions = data;
+        loadRandomQuestion();
+
+        document.getElementById("showAnswer").addEventListener("click", () => {
+          document.getElementById("answer").style.display = "block";
+        });
+
+        document.getElementById("nextQuestion").addEventListener("click", () => {
+          loadRandomQuestion();
+        });
+      })
+      .catch(error => {
+        document.getElementById("question").textContent = "問題の読み込みに失敗しました。";
+        console.error("読み込みエラー:", error);
+      });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
